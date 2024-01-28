@@ -1,0 +1,34 @@
+header {
+  @apply sticky top-0 z-30 bg-white shadow-lg;
+}
+#nav {
+  @apply flex justify-between items-center py-2;
+}
+
+#nav ul li a {
+  @apply text-liteBlack font-semibold hover:text-pOrange capitalize;
+}
+
+#nav ul {
+  @apply flex justify-end items-center gap-x-6;
+}
+
+#nav .logo_btn .logo img {
+  @apply w-14 h-14;
+}
+
+#nav .get_btn .button {
+  @apply bg-pOrange text-white border-pOrange text-base inline-block font-medium hover:bg-white hover:text-pOrange;
+}
+
+#nav .nav_menu {
+  @apply w-3/4;
+}
+
+#nav .logo_btn {
+  @apply w-16;
+}
+
+#nav .get_btn {
+  @apply w-40 text-end;
+}

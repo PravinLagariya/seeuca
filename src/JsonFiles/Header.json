@@ -1,0 +1,37 @@
+{
+  "logoImg": [
+    {
+      "label": "Company-logo",
+      "link": "/"
+    }
+  ],
+  "menuItems": [
+    {
+      "label": "home",
+      "link": "/"
+    },
+    {
+      "label": "about",
+      "link": "/about"
+    },
+    {
+      "label": "services",
+      "link": "/services"
+    },
+    {
+      "label": "career",
+      "link": "/career"
+    },
+    {
+      "label": "contact",
+      "link": "/contact"
+    }
+  ],
+  "getBtn": [
+    {
+      "label": "Get In Touch",
+      "link": "/contact"
+    }
+  ],
+  "setting": true
+}

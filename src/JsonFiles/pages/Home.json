@@ -1,0 +1,53 @@
+{
+  "bannner": [
+    {
+      "label": "Smart Digital Solutions for <br/><span>Growing</span> Front End"
+    }
+  ],
+  "about": [
+    {
+      "label": "About us Company",
+      "text1": [
+        {
+          "paragraph": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        },
+        {
+          "paragraph": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 54 54' fill='none'><path d='M2 35.75V3.5C2 2.67157 2.67157 2 3.5 2H50.5C51.3285 2 52 2.67157 52 3.5V35.75M2 35.75V40.5C2 41.3285 2.67157 42 3.5 42H50.5C51.3285 42 52 41.3285 52 40.5V35.75M2 35.75H52M19.5 52H23.25M23.25 52V42M23.25 52H30.75M30.75 52H34.5M30.75 52V42' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' /></svg>",
+      "label": "Web Design",
+      "detail": "A website is the face of your business, it needs to convey your companies values, branding, and professionalism instantly. Without a site tailored to match your companies image, you could be losing potential clients, customers, and patrons every day."
+    },
+    {
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 78 56' fill='none'><path d='M45 3L31 53' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/><path d='M17 13L3 27L17 41' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/><path d='M61 13L75 27L61 41' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+      "label": "Web Devlopment",
+      "detail": "A website is the face of your business, it needs to convey your companies values, branding, and professionalism instantly. Without a site tailored to match your companies image, you could be losing potential clients, customers, and patrons every day."
+    },
+    {
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 54 54' fill='none'><path d='M42.2766 25.7952L37.075 41.3998C36.906 41.9068 36.5003 42.2996 35.9879 42.452L4.1075 51.9298C2.83721 52.3073 1.66762 51.099 2.08668 49.8418L12.4375 18.7893C12.5881 18.3376 12.9276 17.9738 13.3678 17.7926L28.0736 11.7372C28.6852 11.4854 29.3882 11.626 29.8558 12.0936L41.8808 24.1189C42.3195 24.5576 42.4729 25.2066 42.2766 25.7952Z' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M3.02188 50.8954L20.3961 33.5211' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M42.597 24.8344L50.319 17.1125C52.4512 14.9801 52.4512 11.523 50.319 9.39062L44.5277 3.59923C42.3952 1.46692 38.9381 1.46692 36.8056 3.59923L29.0838 11.3211' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M26.188 27.7301C24.5888 26.1308 21.9957 26.1308 20.3965 27.7301C18.7973 29.3294 18.7973 31.9224 20.3965 33.5214C21.9957 35.1207 24.5888 35.1207 26.188 33.5214C27.787 31.9224 27.787 29.3294 26.188 27.7301Z' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+      "label": "UI/UX",
+      "detail": "A website is the face of your business, it needs to convey your companies values, branding, and professionalism instantly. Without a site tailored to match your companies image, you could be losing potential clients, customers, and patrons every day."
+    },
+    {
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 54 54' fill='none'><path d='M51.4249 27C51.4249 13.1929 40.3606 2 26.7124 2C13.0641 2 2 13.1929 2 27C2 40.807 13.0641 52 26.7124 52' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M29.1851 2.12207C29.1851 2.12207 36.5988 11.9986 36.5988 26.9985' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M24.2392 51.8753C24.2392 51.8753 16.8254 41.9985 16.8254 26.9985C16.8254 11.9986 24.2392 2.12207 24.2392 2.12207' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M3.5564 35.7494H26.7128' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M3.5564 18.2506H49.8694' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path fill-rule='evenodd' clip-rule='evenodd' d='M51.1251 41.7941C52.3454 42.5534 52.2703 44.4016 51.0134 44.5459L44.6707 45.2731L41.8258 51.0539C41.2621 52.1994 39.5196 51.6386 39.2315 50.2189L36.1293 34.9289C35.8859 33.7289 36.952 32.9736 37.9833 33.6156L51.1251 41.7941Z' stroke='white' stroke-width='4'/></svg>",
+      "label": "SEO",
+      "detail": "A website is the face of your business, it needs to convey your companies values, branding, and professionalism instantly. Without a site tailored to match your companies image, you could be losing potential clients, customers, and patrons every day."
+    },
+    {
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' width='51' height='56' viewBox='0 0 51 56' fill='none'><path d='M3 47.4444V8.55556C3 5.48731 5.48731 3 8.55556 3H45.7778C46.6983 3 47.4444 3.74619 47.4444 4.66667V41.0953' stroke='white' stroke-width='6' stroke-linecap='round'/><path d='M14.1111 3V25.2222L21.0556 20.7778L28 25.2222V3' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/><path d='M8.55556 41.8889H47.4444' stroke='white' stroke-width='6' stroke-linecap='round'/><path d='M8.55556 53H47.4444' stroke='white' stroke-width='6' stroke-linecap='round'/><path d='M8.55556 53C5.48731 53 3 50.5128 3 47.4445C3 44.3761 5.48731 41.8889 8.55556 41.8889' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+      "label": "E-Learning",
+      "detail": "A website is the face of your business, it needs to convey your companies values, branding, and professionalism instantly. Without a site tailored to match your companies image, you could be losing potential clients, customers, and patrons every day."
+    },
+    {
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' width='59' height='54' viewBox='0 0 59 54' fill='none'><path d='M7.84473 39.5C12.1674 46.9725 20.2467 52 29.5003 52C38.7538 52 46.833 46.9725 51.1555 39.5' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M7.84473 14.5C12.1674 7.02748 20.2467 2 29.5003 2C38.7538 2 46.833 7.02748 51.1555 14.5' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M32 51.8765C32 51.8765 35.5198 47.2415 37.7368 39.4998' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M32 2.12329C32 2.12329 35.5198 6.75819 37.7368 14.5' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M27 51.8765C27 51.8765 23.4804 47.2415 21.2633 39.4998' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M27 2.12329C27 2.12329 23.4804 6.75819 21.2633 14.5' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M22 22L25.75 34.5L29.5 22L33.25 34.5L37 22' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M2 22L5.75 34.5L9.5 22L13.25 34.5L17 22' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M42 22L45.75 34.5L49.5 22L53.25 34.5L57 22' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+      "label": "Hosting",
+      "detail": "A website is the face of your business, it needs to convey your companies values, branding, and professionalism instantly. Without a site tailored to match your companies image, you could be losing potential clients, customers, and patrons every day."
+    }
+  ],
+  "setting": true
+}

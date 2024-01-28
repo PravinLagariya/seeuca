@@ -1,0 +1,24 @@
+#Form_main label {
+  @apply text-white mb-2 block text-lg font-bold;
+}
+
+#Form_main input {
+  @apply text-white block text-base font-bold py-1 px-2 mx-auto bg-transparent border-b-2 border-white focus:border-pOrange hover:border-pOrange;
+}
+
+#Form_main .password,
+#Form_main .user_name {
+  @apply mb-5;
+}
+
+#Form_main {
+  @apply flex justify-center items-center min-h-screen bg-gradient-to-t from-liteBlack to-blue;
+}
+
+#Form_main button {
+  @apply text-white font-bold border py-2 px-4 border-pLOrange transition-all rounded-lg duration-4 hover:text-white hover:border-pOrange hover:bg-pOrange w-full mt-5;
+}
+
+#Form_main .form {
+  @apply border-4 border-white rounded-lg p-8 backdrop-blur-sm bg-white/30 shadow-md;
+}
