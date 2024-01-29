@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import HomeAPI from "../JsonFiles/pages/Home.json";
 import Backimg from "../image/backimg.svg";
-import Slider from "react-slick";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Project1 from '../image/Project-1.png';
 
 function Home(props) {
   const HomeData = HomeAPI.setting;
@@ -27,6 +30,7 @@ function Home(props) {
           </div>
           <Service />
           <Project />
+          <Morden />
         </div>
       ) : (
         <div></div>
@@ -130,7 +134,6 @@ function Service() {
   const ServiceData = HomeAPI.services;
   console.log("services", ServiceData);
 
-<<<<<<< Updated upstream
   return (
     <section id="service" className="relative z-10">
       <div className="container mx-auto">
@@ -143,23 +146,6 @@ function Service() {
                   <span dangerouslySetInnerHTML={{ __html: res.svg }}></span>
                   <h3>{res.label}</h3>
                   <p>{res.detail}</p>
-=======
-    return (
-        <section id='service'>
-            <div className='container mx-auto'>
-                <div className='service'>
-                    <h2 className='heading'>Services</h2>
-                    <div className='card_main'>
-                        {ServiceData && ServiceData.map((res, index) => (
-                            <div className='card' key={index}>
-                                <span dangerouslySetInnerHTML={{ __html: res.svg }}>
-                                </span>
-                                <h3>{res.label}</h3>
-                                <p>{res.detail}</p>
-                            </div>
-                        ))}
-                    </div>
->>>>>>> Stashed changes
                 </div>
               ))}
           </div>
@@ -174,9 +160,12 @@ function Project() {
     dots: false,
     infinite: true,
     speed: 500,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  const ProjectData = HomeAPI.project;
+  console.log("ProjectData", ProjectData);
   return (
     <section id="project" className="relative z-10">
       <div className="container mx-auto">
@@ -184,30 +173,101 @@ function Project() {
           <h2 className="main_heading">Latest Project’s</h2>
           <div className="slider">
             <Slider {...settings}>
-              <div>
-                <h3>1</h3>
-              </div>
-              <div>
-                <h3>2</h3>
-              </div>
-              <div>
-                <h3>3</h3>
-              </div>
-              <div>
-                <h3>4</h3>
-              </div>
-              <div>
-                <h3>5</h3>
-              </div>
-              <div>
-                <h3>6</h3>
-              </div>
+              {ProjectData && ProjectData.map((res, index) => (
+                <div>
+                  <div key={index} className="slide_inner">
+                    <div className="slide_img">
+                      <img src={Project1} alt="Project1" />
+                    </div>
+                    <div className="slide_detail">
+                      <h3 className="slider_head">{res.label}</h3>
+                      <p className="slider_semi_head">{res.semi_label}</p>
+                      <p>{res.detail}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </Slider>
           </div>
-        </div>
-      </div>
-    </section>
+        </div >
+      </div >
+    </section >
   );
 }
 
+function Morden() {
+  const accordionItems = [
+    { title: 'Section 1', content: 'Content for Section 1' },
+    { title: 'Section 2', content: 'Content for Section 2' },
+    { title: 'Section 3', content: 'Content for Section 3' },
+  ];
+  return (
+    <section id="morden" className="relative z-10">
+      <div className="container mx-auto">
+        <div className="morden">
+          <h2 className="main_heading">Modern IT Services</h2>
+          <p className="semi_title">Our cutting-edge digital solutions and services have been helping businesses across the world to mitigate modern business challenges with a modern digital approach.</p>
+        </div>
+        <div>
+          <Accordion items={accordionItems} />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+const AccordionItem = ({ title, content, isOpen, onToggle }) => {
+
+  return (
+    <div className="accordion-item">
+      <div className="accordion-header" onClick={onToggle}>
+        <h2>{title}</h2>
+      </div>
+      {/* {isOpen && <div className="accordion-header" >{content}</div>} */}
+      {isOpen && <div className="accordion-content" >
+        <div className="header_accordion">
+          <h4>Digital Transformation</h4>
+          <p>Explore how the dots connect from conceptualization to an agile cycle of digital transformation & app development with the support of robust technologies to bring the leading-edge digital product to life that can transform your business.</p>
+          <div class="primary_btn">
+            <a class="button" href="/">Get In Touch</a>
+          </div>
+        </div>
+        <div className="content_div">
+          <div>
+            <p>From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.</p>
+          </div>
+          <div>
+            <p>From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.</p>
+          </div>
+          <div>
+            <p>From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.</p>
+          </div>
+          <div>
+            <p>From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.</p>
+          </div>
+        </div>
+      </div>}
+    </div>
+  );
+
+};
+
+const Accordion = ({ items }) => {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const handleToggle = (index) => {
+    setOpenIndex(index);
+  };
+  return (
+    <div className="accordion" id="accordion">
+      {items.map((item, index) => (
+        <AccordionItem key={index}
+          title={item.title}
+          content={item.content}
+          isOpen={index === openIndex}
+          onToggle={() => handleToggle(index)} />
+      ))}
+    </div>
+  );
+};
 export default Home;

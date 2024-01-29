@@ -32,6 +32,10 @@ input {
   @apply transition-all duration-4 font-poppins;
 }
 
-.main_heading{
+.main_heading {
   @apply text-pOrange font-bold mb-8 text-5xl text-start;
+}
+
+.primary_btn .button {
+  @apply bg-pOrange text-white border-pOrange text-base inline-block font-medium hover:bg-white hover:text-pOrange;
 }

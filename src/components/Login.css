@@ -12,7 +12,7 @@
 }
 
 #Form_main {
-  @apply flex justify-center items-center min-h-screen bg-gradient-to-t from-liteBlack to-blue;
+  @apply flex justify-center items-center min-h-screen relative z-10;
 }
 
 #Form_main button {
@@ -20,5 +20,5 @@
 }
 
 #Form_main .form {
-  @apply border-4 border-white rounded-lg p-8 backdrop-blur-sm bg-white/30 shadow-md;
+  @apply rounded-3xl p-5 backdrop-blur-sm bg-white/10 shadow-md w-80;
 }

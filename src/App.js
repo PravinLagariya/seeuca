@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import TheHeader from './components/TheHeader';
 import TheFooter from './components/TheFooter';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
@@ -12,7 +12,7 @@ import TheLogin from './components/TheLogin';
 
 function App() {
   const loginStatus = localStorage.getItem('loginStatus');
-  console.log("FromApp.js",loginStatus);
+  console.log("FromApp.js", loginStatus);
   return (
     <Router>
       <div className="App">
