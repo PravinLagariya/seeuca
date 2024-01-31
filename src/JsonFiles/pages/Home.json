@@ -71,5 +71,52 @@
       "detail": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable."
     }
   ],
+  "morden": [
+    {
+      "title": "Digital",
+      "content_title": "Digital Transformation",
+      "content": "Explore how the dots connect from conceptualization to an agile cycle of digital transformation & app development with the support of robust technologies to bring the leading-edge digital product to life that can transform your business.",
+      "btn": "More",
+      "content_details": [
+        {
+          "pss": "From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.",
+          "pss": "From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.",
+          "pss": "From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.",
+          "pss": "From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products."
+        }
+      ]
+    },
+    {
+      "title": "Data & AI",
+      "content_title": "Data & AI",
+      "content": "Intelligent-fy your business by leveraging data and AI/ML technologies to get actionable insights and achieve process automation to drive efficiency, productivity, and growth.",
+      "btn": "More",
+      "content_details": [
+        {
+          "pss": "Unlocking the potential of data, we deliver you expert data engineering, advanced analytics, and data intelligence solutions.",
+          "pss": "Unlocking the potential of data, we deliver you expert data engineering, advanced analytics, and data intelligence solutions.",
+          "pss": "Unlocking the potential of data, we deliver you expert data engineering, advanced analytics, and data intelligence solutions.",
+          "pss": "Unlocking the potential of data, we deliver you expert data engineering, advanced analytics, and data intelligence solutions.",
+          "pss": "Unlocking the potential of data, we deliver you expert data engineering, advanced analytics, and data intelligence solutions."
+        }
+      ]
+    },
+    {
+      "title": "Solutions",
+      "content_title": "Solutions",
+      "content": "Unlock the full potential of your business through our provided cutting-edge corporate digital solution built with modern technologies so you can achieve a competitive edge and put a spotlight on your business's success.",
+      "btn": "More",
+      "content_details": [
+        {
+          "pss": "We help you create digital, clickable prototypes of your ideas to test them or pitch to investors and launch them with confidence.",
+          "pss": "We help you create digital, clickable prototypes of your ideas to test them or pitch to investors and launch them with confidence.",
+          "pss": "We help you create digital, clickable prototypes of your ideas to test them or pitch to investors and launch them with confidence.",
+          "pss": "We help you create digital, clickable prototypes of your ideas to test them or pitch to investors and launch them with confidence.",
+          "pss": "We help you create digital, clickable prototypes of your ideas to test them or pitch to investors and launch them with confidence.",
+          "pss": "We help you create digital, clickable prototypes of your ideas to test them or pitch to investors and launch them with confidence."
+        }
+      ]
+    }
+  ],
   "setting": true
 }

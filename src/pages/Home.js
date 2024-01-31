@@ -174,7 +174,7 @@ function Project() {
           <div className="slider">
             <Slider {...settings}>
               {ProjectData && ProjectData.map((res, index) => (
-                <div>
+                <div key={index}>
                   <div key={index} className="slide_inner">
                     <div className="slide_img">
                       <img src={Project1} alt="Project1" />
@@ -196,11 +196,8 @@ function Project() {
 }
 
 function Morden() {
-  const accordionItems = [
-    { title: 'Section 1', content: 'Content for Section 1' },
-    { title: 'Section 2', content: 'Content for Section 2' },
-    { title: 'Section 3', content: 'Content for Section 3' },
-  ];
+  const accordionItems = HomeAPI.morden;
+  console.log("accordionItems", accordionItems);
   return (
     <section id="morden" className="relative z-10">
       <div className="container mx-auto">
@@ -216,7 +213,7 @@ function Morden() {
   )
 }
 
-const AccordionItem = ({ title, content, isOpen, onToggle }) => {
+const AccordionItem = ({ title, content, content_details, content_title, btn, isOpen, onToggle }) => {
 
   return (
     <div className="accordion-item">
@@ -226,25 +223,20 @@ const AccordionItem = ({ title, content, isOpen, onToggle }) => {
       {/* {isOpen && <div className="accordion-header" >{content}</div>} */}
       {isOpen && <div className="accordion-content" >
         <div className="header_accordion">
-          <h4>Digital Transformation</h4>
-          <p>Explore how the dots connect from conceptualization to an agile cycle of digital transformation & app development with the support of robust technologies to bring the leading-edge digital product to life that can transform your business.</p>
+          <h4>{content_title}</h4>
+          {/* <h4>Digital Transformation</h4> */}
+          <p>{content}</p>
+          {/* <p>Explore how the dots connect from conceptualization to an agile cycle of digital transformation & app development with the support of robust technologies to bring the leading-edge digital product to life that can transform your business.</p> */}
           <div class="primary_btn">
-            <a class="button" href="/">Get In Touch</a>
+            <a class="button" href="/">{btn}</a>
           </div>
         </div>
         <div className="content_div">
-          <div>
-            <p>From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.</p>
-          </div>
-          <div>
-            <p>From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.</p>
-          </div>
-          <div>
-            <p>From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.</p>
-          </div>
-          <div>
-            <p>From ideation to concept to delivery, we cover all the bases while you focus on your core competencies and we build your products.</p>
-          </div>
+          {content_details.map((res, index) => (
+            <div key={index}>
+              <p>{res.pss}</p>
+            </div>
+          ))}
         </div>
       </div>}
     </div>
@@ -263,7 +255,10 @@ const Accordion = ({ items }) => {
       {items.map((item, index) => (
         <AccordionItem key={index}
           title={item.title}
+          btn={item.btn}
           content={item.content}
+          content_details={item.content_details}
+          content_title={item.content_title}
           isOpen={index === openIndex}
           onToggle={() => handleToggle(index)} />
       ))}
