@@ -5,6 +5,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Project1 from '../image/Project-1.png';
+import WorkImg from '../image/Rectangle 12.png';
+import WorkImg2 from '../image/Mask group (1).png';
+import WorkImg3 from '../image/Mask group.png';
+import { Link } from "react-router-dom";
 
 function Home(props) {
   const HomeData = HomeAPI.setting;
@@ -31,6 +35,8 @@ function Home(props) {
           <Service />
           <Project />
           <Morden />
+          <Work />
+          <Lest />
         </div>
       ) : (
         <div></div>
@@ -265,4 +271,71 @@ const Accordion = ({ items }) => {
     </div>
   );
 };
+
+function Work() {
+  const WorkItems = HomeAPI.work;
+  console.log("accordionItems", WorkItems);
+  return (
+    <div id="work" className="relative z-10">
+      <div className="container mx-auto">
+        <div>
+          <h2 className="main_heading">Our Recent Work</h2>
+        </div>
+        <div className="work_card">
+          <div className="cards">
+            <figure>
+              <img src={WorkImg} alt="" />
+            </figure>
+          </div>
+          <div className="cards">
+            <figure>
+              <img src={WorkImg3} alt="" />
+            </figure>
+          </div>
+          <div className="cards">
+            <figure>
+              <img src={WorkImg2} alt="" />
+            </figure>
+          </div>
+          {WorkItems && WorkItems.map((res, index) => (
+            <>
+              <div className="cards" key={index}>
+                <div className="cards_text">
+                  <h2>{res.title}</h2>
+                  <p>{res.detail}</p>
+                </div>
+              </div>
+            </>
+          ))}
+          <div className="cards">
+            <div className="cards_text">
+              <p>Want to start a Project ?</p>
+              <div className='primary_btn cards_btn'>
+                <Link className="button">View More</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Lest() {
+  return (
+    <div id="lest" className="relative z-10">
+      <div className="container mx-auto">
+        <div className="lest">
+          <h2>
+            Let’s create a measurable <br /> impact on your business.
+          </h2>
+          <div className='primary_btn'>
+            <Link className="button">Start a conversation</Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default Home;

@@ -33,7 +33,7 @@ input {
 }
 
 .main_heading {
-  @apply text-pOrange font-bold mb-8 text-5xl text-start;
+  @apply text-pOrange font-bold mb-10 text-5xl text-start;
 }
 
 .primary_btn .button {

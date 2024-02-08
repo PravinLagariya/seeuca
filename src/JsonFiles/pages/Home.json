@@ -118,5 +118,15 @@
       ]
     }
   ],
+  "work": [
+    {
+      "title": "12 +",
+      "detail": "Countries Served"
+    },
+    {
+      "title": "0086 +",
+      "detail": "Happy Clients"
+    }
+  ],
   "setting": true
 }

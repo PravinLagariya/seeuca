@@ -187,7 +187,7 @@
 }
 
 #accordion .accordion-content .header_accordion {
-  @apply bg-white/30 backdrop-blur-md p-4 shadow-sm hover:shadow-lg;
+  @apply bg-white/30 backdrop-blur-md py-5 px-3 shadow-md hover:shadow-lg;
 }
 #accordion .accordion-content .header_accordion h4 {
   @apply text-2xl text-pOrange font-bold mb-2;
@@ -203,4 +203,55 @@
 }
 #accordion {
   @apply mt-10;
+}
+
+/* work */
+
+#work {
+  @apply mt-28 text-start;
+}
+
+#work .work_card {
+  @apply grid grid-cols-3 gap-4;
+}
+
+#work .work_card .cards {
+  @apply bg-pLOrange/20 backdrop-blur-md hover:bg-pOrange text-center flex flex-col justify-center shadow-sm hover:shadow-2xl;
+}
+#work .work_card .cards .cards_text {
+  @apply py-10;
+}
+
+#work .work_card .cards:hover .cards_text p,
+#work .work_card .cards:hover .cards_text h2 {
+  @apply text-white;
+}
+
+#work .work_card .cards .cards_text h2 {
+  @apply text-3xl font-bold text-gray-dark;
+}
+
+#work .work_card .cards .cards_text .cards_btn {
+  @apply mt-3;
+}
+#work .work_card .cards .cards_text p {
+  @apply text-xl font-normal text-gray-dark;
+}
+
+#work .work_card figure img {
+  @apply w-full h-full aspect-[8_/_9] object-cover object-center;
+}
+
+/* Lest */
+
+#lest {
+  @apply mt-28 text-start bg-gradient-to-tl from-pLOrange to-pDOrange py-20;
+}
+
+#lest .lest {
+  @apply text-center;
+}
+
+#lest h2 {
+  @apply text-7xl font-bold text-center text-white mb-14 leading-snug;
 }
