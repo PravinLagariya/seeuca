@@ -22,3 +22,7 @@
 #Form_main .form {
   @apply rounded-3xl p-5 backdrop-blur-sm bg-white/10 shadow-md w-80;
 }
+
+#Form_main .wel_come_text {
+  @apply text-white font-bold text-5xl py-6;
+}
