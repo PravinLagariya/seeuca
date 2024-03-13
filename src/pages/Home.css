@@ -71,10 +71,10 @@
   @apply rounded-ss-[40px] rounded-ee-[40px] bg-white/30 backdrop-blur-md shadow-2xl w-3/5 p-8 mb-16 text-start;
 }
 #about_company .heading {
-  @apply text-pDOrange font-bold mb-8 text-3xl text-start;
+  @apply text-pDOrange font-bold mb-8 text-4xl text-start;
 }
 #about_company .about_company_text p {
-  @apply text-white font-normal mb-2 text-base;
+  @apply text-white font-normal mb-2 text-lg capitalize;
 }
 
 /* service */
@@ -100,7 +100,7 @@
 }
 
 #service .card p {
-  @apply text-start text-base text-liteBlack mb-2;
+  @apply text-start text-lg text-liteBlack mb-2;
 }
 
 /* project */
@@ -110,15 +110,15 @@
 }
 
 #project .slider_head {
-  @apply text-2xl font-bold text-pOrange;
+  @apply text-4xl font-bold text-pOrange;
 }
 
 #project .slider_semi_head {
-  @apply text-base font-medium text-pLOrange mt-1;
+  @apply text-lg font-medium text-pLOrange mt-1;
 }
 
 #project p {
-  @apply text-sm font-medium mt-6 text-liteBlack;
+  @apply text-lg font-medium mt-6 text-liteBlack;
 }
 
 #project .slider .slide_inner {

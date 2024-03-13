@@ -14,7 +14,7 @@ function Home(props) {
   const HomeData = HomeAPI.setting;
   return (
     <section>
-      {HomeData === true ? (
+      {HomeData ? (
         <div>
           <div className="bg-pDOrange rounded-bl-[50px] rounded-br-[50px]">
             <Banner />
